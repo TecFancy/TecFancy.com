@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 若非的日志
+subtitle: "爱编码 - 爱生活 - 爱分享"
+description: "爱编码，爱生活，爱分享。"
+keywords: 若非的日志,若非的博客,若非的日记,技术笔记,技术博客,空间周边,Web开发,前端开发,TypeScript,React,Webpack,博客
+author: 若非
+language: zh-CN
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://hi-ruofei.com
+permalink: post/:title/ # :title_:year:month:day/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year/:month/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -97,6 +97,19 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next # slandscape
+
+# Search
+search:
+  path: search.xml
+  field: all # avaiable value: post(Default) | page | all
+  content: true
+  format: html # avaiable value: html(Default) | striptags | raw
+
+baidu_url_submit:
+  count: 100 ## 提交最新的一个链接
+  host: hi-ruofei.com ## 在百度站长平台中注册的域名
+  token: 4UeKJlbDJYleabCQ ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
