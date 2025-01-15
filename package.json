@@ -28,7 +28,7 @@
     "hexo-theme-next": "^8.21.0"
   },
   "devDependencies": {
-    "hexo-related-posts": "^1.5.2",
+    "hexo-related-posts": "^1.6.2",
     "npm-check-updates": "^17.1.9"
   },
   "engines": {
